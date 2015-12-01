@@ -1,0 +1,33 @@
+footer
+    
+    .container
+        display: flex
+        align-items: center
+        justify-content: space-between
+        flex-direction: row
+        
+        @media( max-width: 960px )
+            justify-content: center
+            flex-direction: column
+            
+        .item
+            width: 33.3%
+            display: flex
+            align-items: center
+            justify-content: center
+            
+            @media( max-width: 960px )
+                width: 100%
+                padding: 15px 0
+            
+            ul.social
+                display: flex
+                align-items: center
+                justify-content: center
+                flex-direction: row
+                list-style: none
+                margin: 0
+                padding: 0
+                
+                li
+                    padding: 0 5px

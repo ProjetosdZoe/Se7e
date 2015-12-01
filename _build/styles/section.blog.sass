@@ -1,0 +1,58 @@
+section.blog
+    background-color: $_primary-blue
+    
+    &:before
+        background:
+            position: -157px 0 !important
+        
+    .container
+        
+        h3.title
+            color: $_primary-orange
+        
+        .contents
+            display: flex
+            align-items: center
+            justify-content: center
+            flex-direction: row
+            
+            @media( max-width: 960px )
+                flex-direction: column
+            
+            .item
+                width: 50%
+                padding: 15px
+                display: flex
+                align-items: center
+                justify-content: center
+                flex-direction: row
+                
+                @media( max-width: 960px )
+                    flex-direction: column
+                    width: 100%
+                
+                figure
+                    width: 50%
+                    
+                    @media( max-width: 960px )
+                        width: 100%
+                        
+                    img
+                        border: 2px solid $_primary-orange
+                        border-radius: 6px
+                        width: 100%
+                main
+                    width: 50%
+                    padding: 10px
+                    
+                    @media( max-width: 960px )
+                        width: 100%
+                    
+                    h4.title
+                        color: $_primary-white
+                        font:
+                            size: 30px
+                        text-align: left
+                    p.text
+                        color: $_primary-white
+                        text-align: justify

@@ -1,0 +1,78 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic)
+@import url(https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300italic,300,400italic,700,700italic,900,900italic)
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic)
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,500,300,700)
+
+@import 'bootstrap'
+@import 'font_awesome'
+@import 'variables'
+@import 'animate'
+
+@import '_owl.carousel'
+@import '_owl.theme'
+@import '_owl.transitions'
+
+@import 'header'
+@import 'slider'
+@import 'sections'
+@import 'section.about'
+@import 'section.gallery'
+@import 'section.services'
+@import 'section.blog'
+@import 'section.tips'
+@import 'section.contact'
+@import 'footer'
+
+@viewport
+    zoom: 1.0
+    width: device-width
+
+@font-face 
+    font-family: 'SignPainter'
+    src: url('../fonts/SignPainter-HouseScript.ttf')
+    font-weight: normal
+    font-style: normal
+
+body,html
+    font-family: Raleway
+    margin: 0
+    padding: 0
+    overflow-x: hidden
+    -webkit-font-smoothing: antialiased !important
+    -moz-font-smoothing: antialiased !important
+    font-smoothing: antialiased !important
+    
+    a , a:active , a:hover , a:link , a:visited
+        text-decoration: none
+    
+    .scroll-top
+        position: fixed
+        right: 10px
+        bottom: 10px
+        width: 48px
+        height: 48px
+        background-color: $_primary-orange
+        text-align: center
+        display: flex
+        justify-content: center
+        align-content: center
+        border-radius: 50%
+        transition: all 0.4s ease-in-out
+        opacity: 0
+        box-shadow: 0px 2px 3px $_primary-black
+
+        a
+            display: block
+            text-decoration: none
+            color: $_primary-white
+            font-size: 30px
+            cursor: pointer
+
+        &:hover
+            background-color: lighten( $_primary-orange, 10%)
+
+            a
+                color: $_primary-white
+            
+    .primary
+        color: $_primary-orange

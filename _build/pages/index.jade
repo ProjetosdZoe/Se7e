@@ -1,0 +1,180 @@
+include mixins
+
+doctype html
+html
+    head
+    
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        meta(name="description" content="Desentupidora Se7e")
+        meta(name="author" content="Hudson Nicoletti")
+    
+        title  Desentupidora Se7e
+        
+        
+        link(rel="stylesheet", href="assets/styles/main.css")
+        link(rel="shortcut icon" href="/favicon.ico")
+    body
+                 
+        header
+            .container
+                nav
+                    .logo-container
+                        .logo
+                        .menu-toggle
+                            span.bar
+                            span.bar
+                            span.bar
+                    ul.menu
+                        li: a(href="#") Home
+                        li: a(href="#") Empresa
+                        li: a(href="#") Serviços
+                        li: a(href="#") Blog
+                        li: a(href="#") Dicas
+                        li: a(href="#") Contato
+                        
+        section.slider
+            ul.slides-container
+                li(style="background-image: url('assets/images/banner/01.jpg')")
+                    .container
+                        h3 limpeza de calhas
+                        p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut accusamus illum error nihil quas quae, ipsum repellat sed cumque possimus!
+                        a.cta(href="#") Faça Contato
+                li(style="background-image: url('assets/images/banner/01.jpg')")
+                    .container
+                        h3 limpeza de calhas
+                        p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut accusamus illum error nihil quas quae, ipsum repellat sed cumque possimus!
+                        a.cta.white(href="#") Faça Contato
+                li(style="background-image: url('assets/images/banner/01.jpg')")
+                    .container
+                        h3 limpeza de calhas
+                        p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut accusamus illum error nihil quas quae, ipsum repellat sed cumque possimus!
+                        a.cta.blue(href="#") Faça Contato
+                        
+        section.about
+            .container
+                h3.title empresa
+                .contents
+                    .info
+                        figure
+                            img(src="assets/images/contents/about-01.png")
+                        span Missão
+                        p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi natus eaque, eius illo ut quibusdam accusantium, maxime ipsum numquam impedit.
+                    .info
+                        figure
+                            img(src="assets/images/contents/about-02.png")
+                        span Visão
+                        p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi natus eaque, eius illo ut quibusdam accusantium, maxime ipsum numquam impedit.
+                    .info
+                        figure
+                            img(src="assets/images/contents/about-03.png")
+                        span Valores
+                        p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi natus eaque, eius illo ut quibusdam accusantium, maxime ipsum numquam impedit.
+                        
+                a.cta(href="#") + Informações!
+                
+        section.gallery
+            .container
+                h3.title Galeria
+            .contents
+                +gallery()
+                
+        section.services
+            .container
+                h3.title Serviços
+                .contents
+                    +services('service-01.png','Hidrojateamento em rede pluvial	(água de chuva), tubulação da rede coletora de esgoto em geral','#')
+                    +services('service-02.png','Desentupimento de pia, tanques, mictórios, vasos sanitário e outros','#')
+                    +services('service-03.png','Limpezas em caixas d’água, com emissão de certificado','#')
+                    +services('service-04.png','Água para irrigação de jardins, lavagem de ruas, pátios, fachadas e limpeza em geral','#')
+                    +services('service-05.png','Esgotamento de fossa (efluentes oriundo de esgoto)','#')
+                    +services('service-06.png','Limpeza de calhas','#')
+                    +services('service-07.png','Lavagem de pátio, quadra, barracões','#')
+                    +services('service-08.png','Desentupimento de rede de esgoto','#')
+                    
+                a.cta(href="#") + Todos os Serviços
+                
+        section.blog
+            .container
+                h3.title Blog
+                .contents
+                    .item
+                        figure
+                            img(src="assets/images/contents/blog/01.jpg", alt="")
+                        main
+                            h4.title Título do artigo
+                            p.text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa blanditiis optio ullam quibusdam provident, maiores expedita amet quis rem neque!
+                            a.cta.white Leia Mais
+                    .item
+                        figure
+                            img(src="assets/images/contents/blog/01.jpg", alt="")
+                        main
+                            h4.title Título do artigo
+                            p.text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa blanditiis optio ullam quibusdam provident, maiores expedita amet quis rem neque!
+                            a.cta.white Leia Mais
+                            
+        section.tips
+            .container
+                .contents
+                    .item.placeholder
+                    .item
+                        ul
+                            li  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, minus.
+                            li  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, ipsam?
+                            li  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, iusto.
+                            li  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, dolore.
+                    
+        section.contact
+            .container
+                h3.title contato
+                .contents
+                    .info
+                        .row
+                            span.phone 
+                                i.fa.fa-phone
+                                | (43) 3321-7235
+                            span.email 
+                                i.fa.fa-envelope-o
+                                | contato@desentupidorasete.com.br
+                        .row
+                            .column
+                                span.phone 
+                                    img(src="assets/images/contents/icons/phone-type-01.png", alt="")
+                                    | (43) 9925-6068
+                                span.phone 
+                                    img(src="assets/images/contents/icons/phone-type-02.png", alt="")
+                                    | (43) 8405-1365
+                            .column
+                                span.phone 
+                                    img(src="assets/images/contents/icons/phone-type-03.png", alt="")
+                                    | (43) 9150-6370
+                                span.phone 
+                                    img(src="assets/images/contents/icons/phone-type-04.png", alt="")
+                                    | (43) 8832-7642
+                                
+                    form(action="")
+                        .inputs
+                            input(type="text",placeholder="Nome Completo")
+                            input(type="text",placeholder="Telefone")
+                            input(type="email",placeholder="E-Mail")
+                            textarea(placeholder='mensagem')
+                        button(type="submit") Enviar
+                        
+        footer
+            .container
+                .item
+                    ul.social
+                        li: a(href="#"): img(src="assets/images/contents/icons/social-01.png", alt="")
+                        li: a(href="#"): img(src="assets/images/contents/icons/social-02.png", alt="")
+                        li: a(href="#"): img(src="assets/images/contents/icons/social-03.png", alt="")
+                        li: a(href="#"): img(src="assets/images/contents/icons/social-04.png", alt="")
+                .item
+                    p Se7e - Hidrojateamento. Desentupitora e Limpa Fossa 2015. Todos os direitos reservados.
+                .item
+                    a(href="http://agenciadzoe.com.br"): img(src="//agenciadzoe.com.br/assets/public/images/logo-alt.png", alt="Agência dZoë", height="50")
+                        
+        script(type="text/javascript" src="assets/scripts/jquery-1.11.3.min.js")
+        script(type="text/javascript" src="assets/scripts/jquery.easing.1.3.js")
+        script(type="text/javascript" src="assets/scripts/owl.carousel.min.js")
+        script(type="text/javascript" src="assets/scripts/scrollIt.js")
+        script(type="text/javascript" src="assets/scripts/functions.js")
