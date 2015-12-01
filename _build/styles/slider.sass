@@ -1,0 +1,52 @@
+section.slider
+    z-index: 0
+    position: relative
+    width: 100vw
+    height: 100vh
+    overflow: hidden
+    padding: 0
+    
+    ul.slides-container
+        width: 100%
+        height: 100%
+        position: relative
+        padding: 0
+        margin: 0
+        list-style: none
+        
+        li
+            height: 100vh
+            width: 100%
+            background:
+                position: 0 0
+                size: cover
+                repeat: no-repeat
+                
+            .container
+                display: flex
+                align-items: center
+                justify-content: center
+                flex-direction: column
+                width: 100%
+                height: 100%
+                padding: 0 16px
+                margin: 0
+                
+                
+                h3
+                    font:
+                        size: 50px
+                        family: Lato
+                        weight: bold
+                    color: $_primary-white
+                    text-transform: uppercase
+                    text-shadow: 1px 1px 0 $_primary-black, -1px -1px 0 $_primary-black, 1px -1px 0 $_primary-black, -1px  1px 0 $_primary-black, 1px  1px 0 $_primary-black
+                    
+                p
+                    font:
+                        size: 18px
+                        family: Lato
+                        weight: bold
+                    color: $_primary-white
+                    text-shadow: 1px 1px 0 $_primary-black, -1px -1px 0 $_primary-black, 1px -1px 0 $_primary-black, -1px  1px 0 $_primary-black, 1px  1px 0 $_primary-black
+                    text-align: left

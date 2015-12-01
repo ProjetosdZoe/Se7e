@@ -1,0 +1,119 @@
+header
+    z-index: 2
+    width: 100%
+    background:
+        color: transparent
+    padding: 40px 0
+    position: absolute
+    transition: all 0.15s linear
+    
+    &.sticky
+        background-color: $_primary-white
+        position: fixed
+        padding: 0 
+        
+        .container
+            nav
+                .logo-container
+                    .logo                    
+                        background:
+                            image: url('../images/logo-alt.png')
+    
+    .container
+        
+        nav
+            display: flex
+            align-items: center
+            justify-content: space-between
+            flex-direction: row
+            width: 100%
+            
+            @media( max-width: 960px )
+                justify-content: space-between
+                flex-direction: column
+                
+            .logo-container
+                display: flex
+                align-items: center
+                justify-content: center
+                flex-direction: row
+                width: 100%
+                
+                .logo
+                    min-width: calc( 100% - 90px )
+                    width: 100%
+                    height: 100px
+                    background:
+                        image: url('../images/logo.png')
+                        repeat: no-repeat
+                        position: center center
+                        size: contain
+
+                .menu-toggle
+                    display: none
+                    
+                    span.bar
+                        display: block
+                        width: 60px
+                        height: 10px
+                        background-color: $_primary-orange
+                        border-radius: 6px
+                        opacity: 1
+                        transition: all 0.3s linear
+                        transform: rotate(0deg)
+                        margin: 10px 0
+                        
+                    &.active
+                        span.bar:nth-child(1)
+                            transform: rotate(45deg)
+                        span.bar:nth-child(2)                            
+                            margin-top: -20px
+                            opacity: 0
+                        span.bar:nth-child(3)
+                            margin-top: -20px
+                            transform: rotate(-45deg)
+                            
+                    @media( max-width: 960px )
+                        display: inline-block
+
+            ul.menu
+                display: flex
+                align-items: center
+                justify-content: center
+                flex-direction: row
+                list-style: none
+                padding: 0
+                margin: 0
+                transition: all 0.15s linear
+                
+                @media( max-width: 960px )
+                    display: none
+                    flex-direction: column
+                    background-color: $_primary-white
+                    width: 100vw
+                    
+                    &.active
+                        display: flex
+
+                li
+                    padding: 25px
+                    
+                    a
+                        text-decoration: none
+                        color: $_primary-white
+                        text-transform: uppercase
+                        font:
+                            family: Lato
+                            size: 18px
+                            weight: bold
+                        text-shadow: 1px 1px 0 $_primary-black, -1px -1px 0 $_primary-black, 1px -1px 0 $_primary-black, -1px  1px 0 $_primary-black, 1px  1px 0 $_primary-black
+                        
+                        @media( max-width: 960px )
+                            text-shadow: none !important
+                            color: $_primary-black
+                        
+                    &.active , &:hover 
+                        
+                        a
+                            text-decoration: none
+                            color: $_primary-orange

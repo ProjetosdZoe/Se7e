@@ -1,0 +1,41 @@
+section.services
+    
+    &:before
+        display: none
+    
+    .contents
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: row
+        flex-wrap: wrap
+        
+        .item
+            width: 25%
+            padding: 15px
+            display: flex
+            align-items: center
+            justify-content: center
+            flex-direction: column
+            
+            @media( max-width: 960px )
+                width: 33.3%
+                
+            @media( max-width: 640px )
+                width: 50%
+                
+            @media( max-width: 320px )
+                width: 100%
+            
+            figure
+                width: 147px
+                height: 147px
+                border-radius: 50%
+                background-color: $_primary-orange
+                
+            span
+                padding: 12px 0
+                font:
+                    family: Lato
+                    size: 14px
+                    weight: Bold
