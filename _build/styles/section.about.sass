@@ -1,42 +1,51 @@
 section.about
     
-    .contents
+    .container
         display: flex
         align-items: center
         justify-content: center
-        flex-direction: row
-        
-        @media( max-width: 960px )
-            flex-direction: column
-        
-        .info
-            padding: 15px
+        flex-direction: column
+    
+        .contents
             display: flex
             align-items: center
             justify-content: center
-            flex-direction: column
-            
-            figure
+            flex-direction: row
+
+            @media( max-width: 960px )
+                flex-direction: column
+
+            .info
+                padding: 15px
                 display: flex
                 align-items: center
                 justify-content: center
-                text-align: center
-                width: 100%
-                
-                img
+                flex-direction: column
+
+                figure
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    text-align: center
+                    width: 100%
+
+                    img
+                        display: block
+                        transition: all 0.15s linear
+
+                        &:hover
+                            transform: translateY( -30px )
+
+                span
                     display: block
-                    transition: all 0.15s linear
+                    font:
+                        family: SignPainter
+                        size: 60px
+
+
+
+                p
+                    text-align: justify
                     
-                    &:hover
-                        transform: translateY( -30px )
-            
-            span
-                display: block
-                font:
-                    family: SignPainter
-                    size: 60px
-                    
-                
-            
-            p
-                text-align: justify
+        a.cta
+            margin: 15px 0
