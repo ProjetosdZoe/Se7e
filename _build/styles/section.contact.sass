@@ -33,6 +33,13 @@ section.contact
                         color: $_primary-orange
                         padding: 5px
                         
+                @media( max-width: 960px )
+                    .column                        
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        flex-direction: column
+                        
             form
                 width: 100%
                 padding: 40px 0
@@ -60,6 +67,10 @@ section.contact
                     border: 2px solid lighten($_primary-black, 40%)
                     border-radius: 6px
                     width: calc( 33.3% - 4px )
+                    
+                    @media( max-width: 960px )
+                        width: 100% !important
+                        margin: 15px 0 !important
                     
                     &:nth-child(2)
                         margin: 0 15px
