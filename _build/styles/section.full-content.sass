@@ -1,0 +1,218 @@
+section.full-content
+    background-color: $_primary-blue
+
+    &:before
+        background:
+            position: -157px 0 !important
+
+    .container
+
+        h3.title
+            color: $_primary-white
+
+            &.alt
+                text-align: left
+                border-bottom: 2px solid $_primary-orange
+
+        h4.subtitle
+            color: $_primary-white
+            font:
+                size: 24px
+                weight: 300
+                family: Lato
+        span.desc
+            color: $_primary-orange
+            font:
+                size: 20px
+                weight: 300
+                family: Lato
+
+        .contents
+            display: flex
+            align-items: flex-start
+            justify-content: center
+            flex-direction: row
+
+            @media( max-width: 960px )
+                flex-direction: column
+
+            .info
+                padding: 15px
+                display: flex
+                align-items: center
+                justify-content: center
+                flex-direction: column
+                width: 33.3%
+
+                @media( max-width: 960px )
+                    width: 100%
+
+                figure
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    text-align: center
+                    width: 100%
+
+                    img
+                        display: block
+                        transition: all 0.15s linear
+
+                        &:hover
+                            transform: translateY( -30px )
+
+                span
+                    display: block
+                    color: $_primary-white
+                    font:
+                        family: SignPainter
+                        size: 60px
+
+
+
+                p
+                    text-align: justify
+                    color: $_primary-white
+
+                ul
+                    list-style: none
+                    padding: 0
+                    margin: 0
+
+                    li
+                        color: $_primary-white
+                        padding: 4px 0
+
+
+            .info-boxes
+                display: flex
+                align-items: flex-start
+                justify-content: center
+                flex-direction: row
+
+                padding: 25px 0
+
+                @media( max-width: 960px )
+                    flex-direction: column
+                    width: 100%
+
+                .box
+                    width: 25%
+                    @media( max-width: 960px )
+                        width: 100%
+
+                    figure
+                        display: flex
+                        align-items: center
+                        justify-content: center
+
+                    .desc
+                        border: 1px solid $_primary-orange
+                        border-radius: 10px
+                        padding: 25px
+                        width: calc( 100% - 12.5px)
+
+                        @media( max-width: 960px )
+                            width: 100%
+
+                        strong
+                            color: $_primary-orange
+                            text-align: center
+                            display: inline-block
+                            width: 100%
+
+                        p
+                            color: $_primary-orange
+                            font:
+                                weight: 700
+                            text-align: justify
+
+                            &.alt
+                                color: $_primary-white
+                                font:
+                                    weight: 300
+                        ul
+
+                            padding: 0
+                            margin: 0
+
+                            li
+                                padding: 4px 0
+                                color: $_primary-orange
+                                font:
+                                    weight: 700
+
+            .white-box
+                border-radius: 10px
+                background:
+                    color: $_primary-white
+                margin: 15px 0
+                width: 100%
+
+                h3.title
+                    color: $_primary-orange
+
+                    &.handwriting
+                        text-transform: capitalize
+                        font:
+                            family: SignPainter
+                            size: responsive 45px 60px
+                            weight: 100
+
+                .partners
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    flex-direction: row
+                    padding: 25px 0
+
+                    @media( max-width: 960px )
+                        flex-direction: column
+
+                    figure
+                        width: calc( 20% - 10px )
+                        margin: 0 5px
+                        display: flex
+                        align-items: center
+                        justify-content: center
+
+            &.services
+                display: flex
+                align-items: flex-start
+                justify-content: center
+                flex-direction: row
+                flex-wrap: wrap
+
+                .item
+                    width: 25%
+                    padding: 15px
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    flex-direction: column
+
+                    @media( max-width: 960px )
+                        width: 100%
+
+                    figure
+                        width: 147px
+                        height: 147px
+                        border-radius: 50%
+                        background-color: $_primary-orange
+                        display: flex
+                        align-items: center
+                        justify-content: center
+
+                    strong
+                        color: $_primary-orange
+                        padding: 10px 0
+
+                    span
+                        display: block
+                        padding: 4px 0
+                        font:
+                            family: Lato
+                            size: 14px
+                            weight: 300
+                        color: $_primary-white
+                        text-align: justify

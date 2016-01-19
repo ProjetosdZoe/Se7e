@@ -1,0 +1,82 @@
+include mixins
+
+doctype html
+html
+    head
+    
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        meta(name="description" content="Desentupidora Se7e")
+        meta(name="author" content="Hudson Nicoletti")
+    
+        title  Desentupidora Se7e
+        
+        
+        link(rel="stylesheet", href="assets/styles/main.css")
+        link(rel="shortcut icon" href="/favicon.ico")
+    body
+    
+        +popup()
+        +menu()
+        
+        section.header     
+          .container
+            h3.title.handwriting Conheça Mais sobre nossos serviços   
+            
+        section.full-content
+            .container
+                h3.title.alt LIMPEZAS
+                h4.subtitle LIMPEZA TÉCNICA COM HIDROJATO
+                span.desc Nossos caminhões de hidrojateamento estão aptos para os serviços:
+                .contents.services
+                  +services2('service-09.png','Indústria','Limpeza de tubulações Industriais, esgotos, caixa de água, caixa de gordura, reservatórios, paredes, tetos, colunas, pisos e calçadas em geral.')
+                  +services2('service-10.png','Residência','Limpeza de tubulação de esgoto, caixa de água, caixa de gordura, reservatórios, calhas e telhados em geral')
+                  +services2('service-11.png','Condominio','Limpeza de caixa de água, caixa de gordura, reservatórios, esgotos. Lavamos: quadras esportivas, pisos, calçadas, pátios, ruas e praças.')
+                .contents
+                  .info-boxes  
+                    .box
+                      .desc
+                        strong Limpa Fossa
+                        p.alt  A fossa séptica é um tanque subterrâneo onde são lançados os dejetos e a água servida. Sua função é reter tudo que for sólido, iniciando assim, a purificação do liquido. Basicamente estas fossas, tendo o esgoto nelas depositado, fazem com que a parte sólida se deposite ao fundo liberando a parte líquida. Com isso, as bactérias anaeróbias agiram na parte sólida do esgoto fazendo a decomposição. Esta decomposição faz com que o esgoto residual tenha menor quantidade de matéria orgânica, pois a fossa remove cerca de 40% da demanda biológica de oxigênio e o mesmo pode ser lançado de volta à natureza, com menor prejuízo à mesma.
+                    .box
+                      .desc
+                        strong Limpeza de Calhas
+                        p.alt  Para a realização desse procedimento é necessário contratar uma equipe profissional, que possua os equipamentos necessários e efetue testes no local. A Desentupidora Se7e sagrou-se referência em qualidade, executando serviços com extrema qualidade, seriedade e agilidade, oferecendo aos clientes a rápida retomada na utilização dos seus ambientes, seja comercial ou residencial.
+                    .box
+                      .desc
+                        strong Limpeza de caixa d’água
+                        p.alt  Depois do tratamento realizado na água antes de chegar a sua casa, é hora do cliente fazer sua parte e zelar pela qualidade do produto oferecido. A potabilidade da água só pode ser mantida através da manutenção periódica e a limpeza regular dos reservatórios, principalmente nas caixas d'água. Para a realização desse procedimento é necessário contratar uma equipe profissional, que possua os equipamentos necessários e efetue testes na água do reservatório.
+                    .box
+                      .desc
+                        strong Limpeza de caixa de gordura
+                        p.alt O correto é que seja feita a limpeza da caixa de gordura com frequência, mas a recomendação é de pelo menos três meses, variando, também, de acordo com a necessidade de cada cliente. Lembrando, ainda, que um trabalho preventivo é sempre mais barato.Considerando que uma desentupidora está preparada para a manipulação do material originado pela caixa de gordura, é também sempre mais segura a contratação de profissionais para sua limpeza. Além de ser ecologicamente correto, nós da Desentupidora Se7e temos licenças para destinarmos os resíduos em locais apropriados. 
+
+                h3.title.alt DESENTUPIMENTOS
+                .contents
+                  .info-boxes  
+                    .box
+                      .desc
+                        strong Desentupimento de redes de esgoto
+                        p.alt  Desentupimos redes de esgoto para indústrias, residências, escritórios, lojas e estabelecimentos em geral. Nossos técnicos em desentupimento de esgoto são treinados no manuseio dos equipamentos de trabalho e, ainda, em equipamentos de segurança e proteção individual.A água das enchentes pode transmitir inúmeros tipos de doenças, tais como a leptospirose e diarreias. É sabido que o esgoto entupido provoca inundações nos dias de chuva forte. Não fique doente por conta de um esgoto entupido.
+                    .box
+                      .desc
+                        strong Desentupimento de pias e tanques
+                        p.alt  Se a tubulação da sua pia ou do seu tanque entupiu e você não está conseguindo desobstruí-la para poder continuar com os seus afazeres domésticos contate-nos, nós concertamos sua tubulação sem quebrar nada.Quando solicitada a Desentupidora Se7e, soluciona o problema por meio da raspagem e higienização dos canos, removendo toda sujeira, desobstruindo o encanamento e normalizando o fluxo de água. Realizando o desentupimento de pia e tanques com eficiência e qualidade.
+                    .box
+                      .desc
+                        strong Desentupimento de vaso sanitário
+                        p.alt  O desentupimento é feito através de equipamentos especiais, que não danificam o vaso sanitário e também não comprometem a tubulação da rede de esgoto.Quando solicitada a Desentupidora Se7e soluciona o problema executando a desobstrução do vaso sanitário por meio de equipamentos modernos, que removem toda a sujeira sem a necessidade de quebrar pisos ou azulejos. Contudo em alguns casos pode ser necessária a remoção do vaso, para isso contamos com uma equipe técnica bem treinada que realiza o desentupimento de vasos sanitários com eficiência e qualidade.
+                    .box
+                      .desc
+                        strong Desentupimento de ralos
+                        p.alt  Desentupimos qualquer tipo de ralo, seja ele de banheiro, de quintal, de garagem, de pátio ou de qualquer tipo de ambiente. Atendemos indústrias, residências e todos os tipos de estabelecimento.Outro bom motivo para manter os ralos limpos e desobstruídos é que, dessa forma, os transmissores de doenças ficam bem longe dos familiares e amigos. O mosquito da dengue, por exemplo, pode desenvolver criadouros na água parada de tubulações entupidas ou semi-entupidas.
+
+
+        +contact()            
+        +footer()
+                        
+        script(type="text/javascript" src="assets/scripts/jquery-1.11.3.min.js")
+        script(type="text/javascript" src="assets/scripts/jquery.easing.1.3.js")
+        script(type="text/javascript" src="assets/scripts/owl.carousel.min.js")
+        script(type="text/javascript" src="assets/scripts/scrollIt.js")
+        script(type="text/javascript" src="assets/scripts/functions.js")

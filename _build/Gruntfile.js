@@ -1,6 +1,6 @@
 module.exports = function(grunt){
     grunt.initConfig({
-        
+
         sass: {
             dist: {
                 options: {
@@ -11,18 +11,20 @@ module.exports = function(grunt){
                 }
             }
         },
-        
+
         jade: {
             compile: {
                 options: {
                     pretty: true
                 },
                 files: {
-                    "../index.html":        "pages/index.jade"
+                    "../index.html":        "pages/index.jade",
+                    "../about.html":        "pages/about.jade",
+                    "../services.html":     "pages/services.jade",
                 }
             }
         },
-        
+
         postcss: {
             options: {
                 map: true,
@@ -36,7 +38,7 @@ module.exports = function(grunt){
                 src: '../assets/styles/*.css'
             }
         },
-        
+
         rucksack: {
             compile: {
                 files: {
@@ -44,18 +46,18 @@ module.exports = function(grunt){
                 }
             }
         },
-        
+
         imagemin: {
-            dynamic: {                         // Another target 
+            dynamic: {                         // Another target
                 files: [{
-                    expand: true,                  // Enable dynamic expansion 
-                    cwd: '../assets/images/',      // Src matches are relative to this path 
-                    src: ['**/*.{png,jpg,gif}'],   // Actual patterns to match 
-                    dest: '../assets/images/'      // Destination path prefix 
+                    expand: true,                  // Enable dynamic expansion
+                    cwd: '../assets/images/',      // Src matches are relative to this path
+                    src: ['**/*.{png,jpg,gif}'],   // Actual patterns to match
+                    dest: '../assets/images/'      // Destination path prefix
                 }]
             }
         },
-        
+
         uglify: {
             my_target: {
                 files: {
@@ -63,9 +65,9 @@ module.exports = function(grunt){
                 }
             }
         },
-        
+
         watch: {
-            sass: 
+            sass:
             {
                 files: ['styles/*.sass'],
                 tasks: ['sass','rucksack','postcss:dist'],
@@ -73,7 +75,7 @@ module.exports = function(grunt){
                     livereload: true,
                 }
             },
-            jade: 
+            jade:
             {
                 files: ['pages/*.jade'],
                 tasks: ['jade'],
@@ -90,9 +92,9 @@ module.exports = function(grunt){
                 }
             }
         },
-        
+
     });
-    
+
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-uglify');
