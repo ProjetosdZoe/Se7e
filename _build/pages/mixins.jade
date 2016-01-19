@@ -57,12 +57,11 @@ mixin gallery()
             a(href="#").zoom
                 i.fa.fa-search
                             
-mixin services(image,title,link)
+mixin services(image,title)
   .item
       figure
           img(src="assets/images/contents/icons/#{image}", alt="")
       span #{title}
-      a.cta.blue(href="#{link}") + info
       
 mixin services2(image,title,text)
   .item

@@ -1,39 +1,39 @@
 section.services
-    
+
     &:before
         display: none
-    
+
     .contents
         display: flex
         align-items: center
         justify-content: center
         flex-direction: row
         flex-wrap: wrap
-        
+
         .item
-            width: 25%
+            width: 20%
             padding: 15px
             display: flex
             align-items: center
             justify-content: center
             flex-direction: column
-            
+
             @media( max-width: 960px )
-                width: 33.3%
-                
+                width: 50%
+
             @media( max-width: 640px )
                 width: 50%
-                
+
             @media( max-width: 440px )
                 width: 100%
-            
+
             figure
                 width: 147px
                 height: 147px
                 border-radius: 50%
                 background-color: $_primary-orange
-                
-            span    
+
+            span
                 display: block
                 min-height: 85px
                 padding: 12px 0
@@ -41,6 +41,6 @@ section.services
                     family: Lato
                     size: 14px
                     weight: Bold
-                    
+
         a.cta
             margin: 15px 0
