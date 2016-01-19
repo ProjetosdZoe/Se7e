@@ -56,13 +56,93 @@ mixin gallery()
             img(src="//placeimg.com/640/484/arch", alt="")
             a(href="#").zoom
                 i.fa.fa-search
-                
-                
-                
-                
+                            
 mixin services(image,title,link)
-    .item
-        figure
-            img(src="assets/images/contents/icons/#{image}", alt="")
-        span #{title}
-        a.cta.blue(href="#{link}") + info
+  .item
+      figure
+          img(src="assets/images/contents/icons/#{image}", alt="")
+      span #{title}
+      a.cta.blue(href="#{link}") + info
+      
+mixin services2(image,title,text)
+  .item
+      figure
+          img(src="assets/images/contents/icons/#{image}", alt="")
+      strong #{title}
+      span #{text}
+        
+mixin popup()
+  .productPopup-overlay
+    .productPopup
+        .contents
+            a.toggle X
+            img(src="", alt="")
+         
+mixin menu()
+  header
+    .container
+        nav
+          .logo-container
+              .logo
+                .menu-toggle
+                  span.bar
+                  span.bar
+                  span.bar
+            ul.menu
+                li: a(href="/") Home
+                li: a(href="about.html") Empresa
+                li: a(href="services.html") Serviços
+                li: a(href="#") Blog
+                li: a(href="#") Dicas
+                li: a(href="#") Contato
+                
+mixin contact()
+  section.contact
+    .container
+        h3.title contato
+        .contents
+            .info
+                .row
+                    span.phone 
+                        i.fa.fa-phone
+                        | (43) 3321-7235
+                    span.email 
+                        i.fa.fa-envelope-o
+                        | contato@desentupidorasete.com.br
+                .row
+                    .column
+                        span.phone 
+                            img(src="assets/images/contents/icons/phone-type-01.png", alt="")
+                            | (43) 9925-6068
+                        span.phone 
+                            img(src="assets/images/contents/icons/phone-type-02.png", alt="")
+                            | (43) 8405-1365
+                    .column
+                        span.phone 
+                            img(src="assets/images/contents/icons/phone-type-03.png", alt="")
+                            | (43) 9150-6370
+                        span.phone 
+                            img(src="assets/images/contents/icons/phone-type-04.png", alt="")
+                            | (43) 8832-7642
+                        
+            form(action="")
+                .inputs
+                    input(type="text",placeholder="Nome Completo")
+                    input(type="text",placeholder="Telefone")
+                    input(type="email",placeholder="E-Mail")
+                    textarea(placeholder='mensagem')
+                button(type="submit") Enviar
+
+mixin footer()
+  footer
+    .container
+        .item
+            ul.social
+                li: a(href="#"): img(src="assets/images/contents/icons/social-01.png", alt="")
+                li: a(href="#"): img(src="assets/images/contents/icons/social-02.png", alt="")
+                li: a(href="#"): img(src="assets/images/contents/icons/social-03.png", alt="")
+                li: a(href="#"): img(src="assets/images/contents/icons/social-04.png", alt="")
+        .item
+            p Se7e - Hidrojateamento. Desentupitora e Limpa Fossa 2015. Todos os direitos reservados.
+        .item
+            a(href="http://agenciadzoe.com.br"): img(src="//agenciadzoe.com.br/assets/public/images/logo-alt.png", alt="Agência dZoë", height="50")
