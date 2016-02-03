@@ -21,6 +21,10 @@ module.exports = function(grunt){
                     "../index.html":        "pages/index.jade",
                     "../about.html":        "pages/about.jade",
                     "../services.html":     "pages/services.jade",
+                    "../dicas.html":        "pages/dicas.jade",
+                    "../dica.html":         "pages/dica.jade",
+                    "../blog.html":         "pages/blog.jade",
+                    "../contato.html":      "pages/contato.jade",
                 }
             }
         },

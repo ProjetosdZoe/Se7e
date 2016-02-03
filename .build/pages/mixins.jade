@@ -1,3 +1,27 @@
+mixin slide( img, title, text)
+  li(style="background-image: url('assets/images/banner/#{img}')")
+    .container
+        h3 #{title}
+        p  #{text}
+        //a.cta(href="#") Faça Contato
+        
+mixin cert()
+  .contents
+    .white-box
+      .container
+        h3.title.handwriting Somos certificados por:
+      .partners
+        figure
+          img(src="assets/images/contents/icons/partner-01.png")
+        figure
+          img(src="assets/images/contents/icons/partner-02.png")
+        figure
+          img(src="assets/images/contents/icons/partner-03.png")
+        figure
+          img(src="assets/images/contents/icons/partner-04.png")
+        figure
+          img(src="assets/images/contents/icons/partner-05.png")
+        
 mixin gallery()
     .column                    
         figure
@@ -91,9 +115,9 @@ mixin menu()
                 li: a(href="index.html") Home
                 li: a(href="about.html") Empresa
                 li: a(href="services.html") Serviços
-                li: a(href="#") Blog
-                li: a(href="#") Dicas
-                li: a(href="#") Contato
+                li: a(href="blog.html") Blog
+                li: a(href="dicas.html") Dicas
+                li: a(href="contato.html") Contato
                 
 mixin contact()
   section.contact
@@ -101,6 +125,8 @@ mixin contact()
         h3.title contato
         .contents
             .info
+                .row
+                    span.address  Rua Luiza Betti, 287 &mdash; Gleba Lindóia 86031-794 &mdash; Londrina - PR
                 .row
                     span.phone 
                         i.fa.fa-phone
@@ -137,10 +163,8 @@ mixin footer()
     .container
         .item
             ul.social
-                li: a(href="#"): img(src="assets/images/contents/icons/social-01.png", alt="")
-                li: a(href="#"): img(src="assets/images/contents/icons/social-02.png", alt="")
                 li: a(href="#"): img(src="assets/images/contents/icons/social-03.png", alt="")
-                li: a(href="#"): img(src="assets/images/contents/icons/social-04.png", alt="")
+                li: a(href="#"): img(src="assets/images/contents/icons/social-05.png", alt="")
         .item
             p Se7e - Hidrojateamento. Desentupitora e Limpa Fossa 2015. Todos os direitos reservados.
         .item

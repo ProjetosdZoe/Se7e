@@ -1,33 +1,38 @@
 section.tips
     background-color: $_primary-orange
     padding: 0
-    
+
     &:before
         background:
             position: -314px 0 !important
-        
+
     @media( max-width: 960px )
         padding-bottom: 68px
-        
+
+    &.page
+        .container
+            .contents
+                margin-top: 135px
+
     .container
-        
+
         .contents
             display: flex
             align-items: center
             justify-content: center
             flex-direction: row
-        
+
             @media( max-width: 960px )
                 flex-direction: column
-        
+
             .item
                 width: 50%
-            
+
                 @media( max-width: 960px )
                     width: 100%
                     border: 4px solid $_primary-white
                     border-radius: 6px
-            
+
                 &.placeholder
                     background:
                         image: url('../images/contents/tips.png')
@@ -41,7 +46,7 @@ section.tips
                         background:
                             image: url('../images/contents/tips-mobile.png')
                             position: center bottom
-                    
+
                 ul
                     li
                         color: $_primary-white
