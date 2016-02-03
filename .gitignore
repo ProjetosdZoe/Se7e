@@ -2,10 +2,10 @@
 
 ### grunt ###
 # Grunt usually compiles files inside this directory
-_build/node_modules/*/
-_build/node_modules/
-_build/.sass-cache/*/
-_build/.sass-cache/
+.build/node_modules/*/
+.build/node_modules/
+.build/.sass-cache/*/
+.build/.sass-cache/
 
 .psd
 

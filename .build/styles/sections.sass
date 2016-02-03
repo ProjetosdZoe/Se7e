@@ -1,7 +1,7 @@
 section
     padding: 68px 0
     position: relative
-    
+
     &:before, &:after
         position: absolute
         content: ''
@@ -15,12 +15,12 @@ section
         bottom: 100%
         left: 50%
         transform: translateX(-50%)
-        
+
     &:after
         display: none
         bottom: 0
         top: 100%
-    
+
     .title
         font:
             size: 36px
@@ -29,9 +29,19 @@ section
         text-transform: uppercase
         color: $_primary-blue
         text-align: center
-        
-        
-        
+
+        &.handwriting
+            text-transform: capitalize
+            font:
+                family: SignPainter
+                size: responsive 45px 60px
+                weight: 100
+
+            &.white
+                color: $_primary-white
+
+
+
     a.cta
         display: inline-block
         font:
@@ -46,17 +56,17 @@ section
 
         &:hover
             background-color: darken( $_primary-orange , 10% )
-        
+
         &.white
             background-color: $_primary-white
             color: $_primary-orange
-            
+
             &:hover
                 background-color: lighten( $_primary-orange , 40% )
-        
+
         &.blue
             background-color: $_primary-blue
             color: $_primary-white
-            
+
             &:hover
                 background-color: darken( $_primary-blue , 10% )

@@ -216,3 +216,58 @@ section.full-content
                             weight: 300
                         color: $_primary-white
                         text-align: justify
+
+        ul.tips-list
+            display: flex
+            align-items: center
+            justify-content: center
+            flex-direction: column
+            width: 100%
+
+            li
+                color: $_primary-white
+                font:
+                    size: 16px
+                a
+                    color: $_primary-white
+                    &:hover
+                        color: $_primary-orange
+
+        .text
+            color: $_primary-white
+            font-size: 16px
+            position: relative
+
+        .share
+            position: absolute
+            right: 0
+            bottom: -80px
+            min-width: 50px
+            display: flex
+            align-items: center
+            justify-content: center
+            flex-direction: column
+            text-align: center
+
+            a
+                display: inline-block
+                border: 1px solid $_primary-orange
+                color: $_primary-orange
+                border-radius: 100%
+                padding: 15px
+                width: 50px
+                height: 50px
+                transition: all 0.15s linear
+
+                &:hover
+                    background: $_primary-orange
+                    color: $_primary-white
+                    cursor: pointer
+
+            h4
+                display: inline-block
+                font:
+                    size: 22px
+                    family: SignPainter
+                    weight: 100
+                color: $_primary-white
