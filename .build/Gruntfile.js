@@ -24,7 +24,7 @@ module.exports = function(grunt){
                     "../dicas.html":        "pages/dicas.jade",
                     "../dica.html":         "pages/dica.jade",
                     "../blog.html":         "pages/blog.jade",
-                    "../contato.html":      "pages/contato.jade",
+                    "../info.html":         "pages/info.jade",
                 }
             }
         },
