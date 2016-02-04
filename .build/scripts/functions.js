@@ -1,5 +1,5 @@
 (function($){
-    
+
     var $body             =   $("body"),
         $header           =   $("header"),
         $nav              =   $header.find("nav"),
@@ -11,8 +11,8 @@
         $Images           =   $galleryWrap.find("figure"),
         $PPO              =   $body.find(".productPopup-overlay"),
         $PP               =   $body.find(".productPopup");
-  
-    
+
+
     function stickyHeader( offset )
     {
         if( offset > $header.height() )
@@ -24,20 +24,20 @@
             $header.removeClass("sticky");
         }
     }
-    
+
     function toggleMenu( $toggle )
     {
         $menuToggle.toggleClass("active");
         $menu.toggleClass("active");
-        
+
         return false;
     }
-    
+
     function sliderinit( options )
     {
         $sliderCar.owlCarousel( options );
     }
-    
+
 
     $Images.each(function(){
 
@@ -54,13 +54,13 @@
             });
 
             $PP.find(".contents img").attr("src", img);
-            
+
             return false;
 
         });
 
     });
-            
+
     $PPO.on("click", function(){
 
             $PPO.css({
@@ -88,20 +88,20 @@
             $PP.find(".contents img").attr("src", "");
 
     });
-            
-    
+
+
     $(window).scroll(function(){
-    
+
         var offset = $(window).scrollTop();
 
         stickyHeader(offset);
 
     });
-    
+
     $menuToggle.on("click", function(){
         toggleMenu();
     });
-    
+
     sliderinit({
         autoPlay : true,
         navigation : false,
@@ -112,5 +112,7 @@
         stopOnHover: true,
         addClassActive: false
     });
-    
+
+     $.scrollIt();
+
 })(jQuery)
