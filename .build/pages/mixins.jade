@@ -3,7 +3,7 @@ mixin slide( img, title, text)
     .container
         h3 #{title}
         p  #{text}
-        a.cta(href="#") Faça Contato
+        a.cta(data-scroll-goto="6") Faça Contato
         
 mixin cert()
   .contents
@@ -120,7 +120,7 @@ mixin menu()
                 li: a(href="contato.html") Contato
                 
 mixin contact()
-  section.contact
+  section.contact(data-scroll-index="6")
     .container
         h3.title contato
         .contents

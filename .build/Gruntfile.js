@@ -92,7 +92,7 @@ module.exports = function(grunt){
                 files: ['scripts/*.js'],
                 tasks: ['uglify'],
                 options: {
-                    livereload: true,
+                    livereload: 7777,
                 }
             }
         },
